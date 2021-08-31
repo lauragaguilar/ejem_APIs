@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylep.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Icons+Outlined" rel="stylesheet">
+    <script src="menu.js"></script>
+    <title>Pokédex</title>
+    
+</head>
+<body>
+    <!-- ...  Estructura  ...   -->
+
+    <header class="header">
+        <img id="logo" src="logo.png" alt="logo" class="header-elem">
+        <h1 class="header-elem" >Mi Pokédex</h1>
+    </header>
+    
+    <nav>
+        <div class="toggle">
+            <i class="material-icons-outlined" onclick="mobile()">menu</i>
+        </div>
+        <ul id="idMobile">
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#">Acerca</a></li>
+            <li><a href="#">Contacto</a></li>                
+        </ul>
+    </nav>
+
+    <main>
+        
+            <div id="pokedex">
+                <div id="left">
+                    <div class="display">
+                        <img id="pkm-img" src="rarity.png" alt="pokemon">
+                    </div>
+
+                    <div id="dpad" onclick="buscar()">
+                        <div id="dpad-top"></div>
+                        <div id="dpad-horizontal"></div>
+                        <div id="dpad-bottom"></div>
+
+                    </div>
+
+                    <div id="btn-circle">
+
+                    </div>
+
+                </div>
+
+                <div id="right">
+                    <div class="display">
+                        <ul>
+                            <li>
+                                <p id="name"><b>Nombre:</b> Rarity</p>
+                            </li>
+                            <li>
+                                <p id="type"><b>Tipo:</b> Normal</p>
+                            </li>
+                            <li>
+                                <p id="height"><b>Altura:</b> 50 cm</p>
+                            </li>
+                            <li>
+                                <p id="weight"><b>Peso:</b> 1 kg</p>
+                            </li>
+                            <li>
+                                <p id="des"><b>Descripción:</b> Puede cambiar la apariencia de las cosas</p>
+                            </li>
+
+                        </ul>
+                    </div>
+                    
+                    <div id="pad">
+                        <div class="btn"></div>
+                        <div class="btn"></div>
+                        <div class="btn"></div>
+                        <div class="btn"></div>
+                        <div class="btn"></div>
+                        <div class="btn"></div>
+                        <div class="btn"></div>
+                        <div class="btn"></div>
+                    </div>
+                </div>
+            </div>
+        
+            
+    </main>
+    <script type="text/javascript" src="ejem_API_poke.js"></script>    
+    <script>
+        buscar();
+    </script>
+
+</body>
+</html>
